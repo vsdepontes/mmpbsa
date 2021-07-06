@@ -1,5 +1,5 @@
-## Ubuntu 18.04 with CUDA 10.1 and GROMACS 2020.2
-FROM gromacs/gromacs:2020.2
+## Ubuntu 20.04 with CUDA 11.2 and GROMACS 2021
+FROM nvcr.io/hpc/gromacs:2021
 
 
 ## System variables
