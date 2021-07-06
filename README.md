@@ -1,7 +1,7 @@
 This image is intended to be used for MMPBSA/MMGBSA calculations using gmx_MMPBSA.  
 Inside the container, you will be able to call any tool from GROMACS, AmberTools and gmx_MMPBSA from anywhere without having to specify a path for the executables and no extra installation should be necessary.  
 You can find the image at: https://hub.docker.com/r/lammfar/mmpbsa  
-To simply start the conatiner, you can use `docker run -it --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix lammfar/mmpbsa:latest`  
+To simply start the container, you can use `docker run -it --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix lammfar/mmpbsa:latest`  
 The command above will download and execute the container in the interactive mode with all the GPUs and interface enabled.    
 
 
