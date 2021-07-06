@@ -6,6 +6,7 @@ FROM gromacs/gromacs:2020.2
 ARG DEBIAN_FRONTEND=noninteractive
 ENV MMPBSA_HOME=/home/mmpbsa
 ENV PATH=/root/miniconda3/bin:$PATH
+ENV AMBERHOME=/root/miniconda3/bin
 
 
 ## MMPBSA's main directory
