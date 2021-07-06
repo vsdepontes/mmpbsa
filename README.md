@@ -3,6 +3,7 @@ Inside the container, you will be able to call any tool from GROMACS, AmberTools
 You can find the image at: https://hub.docker.com/r/lammfar/mmpbsa  
 To simply use the image, you can use `docker run -it --gpus all lammfar/mmpbsa:latest`  
 The command above will download and execute the container in the interactive mode with all the GPUs enabled.  
+Note that you must pass a video socket on `docker run` if you want to use gmx_MMPBSA_ana, otherwise an error will be raised.  
 
 
 The gmx_MMPBSA code can be found at: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA  
