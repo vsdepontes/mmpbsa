@@ -13,6 +13,11 @@ ENV AMBERHOME=/root/miniconda3/bin
 RUN mkdir -p ${MMPBSA_HOME}
 
 
+## Keep alive script
+COPY keepalive.sh ${MMPBSA_HOME}
+RUN chmod +x ${MMPBSA_HOME}/keepalive.sh
+
+
 ## APT packages and related configs
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get install -y apt-utils
@@ -43,6 +48,6 @@ RUN conda install -y -c conda-forge ambertools=21 compilers
 ## gmx_MMPBSA install
 RUN conda install -y pip
 RUN python -m pip install PyQt5
-RUN conda install -y mpi4py
+RUN conda install -y -c conda-forge mpi4py
 RUN python -m pip install gmx_MMPBSA
 
